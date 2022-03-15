@@ -1,0 +1,17 @@
+{
+    "description": "Repository is public",
+    "rationale": "",
+    "remediation": "",
+    "compliance": [
+        {
+            "name": "SOC2",
+            "version": "",
+            "reference": ""
+        }
+    ],
+    "dashboard_name": "Organization",
+    "path": "organizations.organization.id.repos.id",
+    "conditions": [ "and",
+      [ "public", "true", "" ]
+  ]
+} 

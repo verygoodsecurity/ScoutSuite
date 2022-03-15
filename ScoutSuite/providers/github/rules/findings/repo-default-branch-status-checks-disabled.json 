@@ -1,0 +1,17 @@
+{
+    "description": "Repository's default branch has status checks disabled",
+    "rationale": "",
+    "remediation": "",
+    "compliance": [
+        {
+            "name": "SOC2",
+            "version": "",
+            "reference": ""
+        }
+    ],
+    "dashboard_name": "Repository",
+    "path": "organizations.organization.id.repos.id",
+    "conditions": [ "and",
+      [ "status_checks_required", "false", "" ]
+  ]
+} 

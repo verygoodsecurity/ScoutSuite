@@ -1,0 +1,17 @@
+{
+    "description": "Repository has code reviews disabled",
+    "rationale": "",
+    "remediation": "",
+    "compliance": [
+        {
+            "name": "SOC2",
+            "version": "",
+            "reference": ""
+        }
+    ],
+    "dashboard_name": "Repository",
+    "path": "organizations.organization.id.repos.id",
+    "conditions": [ "and",
+      [ "reviews_required", "false", "" ]
+  ]
+} 

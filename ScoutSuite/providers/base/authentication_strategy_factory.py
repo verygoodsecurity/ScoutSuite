@@ -5,7 +5,8 @@ _strategies = {
     'aliyun': 'AliyunAuthenticationStrategy',
     'oci': 'OracleAuthenticationStrategy',
     'bamboohr': 'BambooHRAuthenticationStrategy',
-    'gsuite': 'GsuiteAuthenticationStrategy'
+    'gsuite': 'GsuiteAuthenticationStrategy',
+    'github': 'GithubAuthenticationStrategy'
 }
 
 

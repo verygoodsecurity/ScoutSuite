@@ -1,0 +1,17 @@
+{
+    "description": "Repository's default branch is not protected",
+    "rationale": "",
+    "remediation": "",
+    "compliance": [
+        {
+            "name": "SOC2",
+            "version": "",
+            "reference": ""
+        }
+    ],
+    "dashboard_name": "Repository",
+    "path": "organizations.organization.id.repos.id",
+    "conditions": [ "and",
+      [ "protected", "false", "" ]
+  ]
+} 

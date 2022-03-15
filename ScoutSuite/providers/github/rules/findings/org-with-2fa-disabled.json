@@ -1,0 +1,17 @@
+{
+    "description": "Org has 2FA disabled",
+    "rationale": "",
+    "remediation": "",
+    "compliance": [
+        {
+            "name": "SOC2",
+            "version": "",
+            "reference": ""
+        }
+    ],
+    "dashboard_name": "Organization",
+    "path": "organizations.organization.id",
+    "conditions": [ "and",
+      [ "two_factor_auth", "false", "" ]
+  ]
+} 

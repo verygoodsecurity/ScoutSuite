@@ -31,6 +31,7 @@ class ScoutSuiteArgumentParser:
         self._init_oci_parser()
         self._init_bamboohr_parser()
         self._init_gsuite_parser()
+        self._init_github_parser()
 
     def _init_aws_parser(self):
         parser = self.subparsers.add_parser("aws",
@@ -384,6 +385,11 @@ class ScoutSuiteArgumentParser:
                                     parents=[self.common_providers_args_parser],
                                     help="Run Scout against a GSuite account")
 
+    def _init_github_parser(self):
+        self.subparsers.add_parser("github",
+                                    parents=[self.common_providers_args_parser],
+                                    help="Run Scout against a Github account")
+    
     def parse_args(self, args=None):
         args = self.parser.parse_args(args)
 

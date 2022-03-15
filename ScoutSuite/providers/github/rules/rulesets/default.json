@@ -1,0 +1,47 @@
+{
+    "about": "This is a ruleset for Github",
+    "rules": {
+        "org-with-2fa-disabled.json": [
+            {
+                "args": [],
+                "enabled": true,
+                "level": "danger"
+            }
+        ],
+        "org-with-public-repo.json": [
+            {
+                "args": [],
+                "enabled": true,
+                "level": "warning"
+            }
+        ],
+        "repo-has-vulnerability-alerts-disabled.json": [
+            {
+                "args": [],
+                "enabled": true,
+                "level": "danger"
+            }
+        ],
+        "repo-default-branch-status-checks-disabled.json": [
+            {
+                "args": [],
+                "enabled": true,
+                "level": "danger"
+            }
+        ],
+        "repo-default-branch-not-protected.json": [
+            {
+                "args": [],
+                "enabled": true,
+                "level": "danger"
+            }
+        ],
+        "repo-default-branch-has-reviews-disabled.json": [
+            {
+                "args": [],
+                "enabled": true,
+                "level": "danger"
+            }
+        ]
+    }
+}
