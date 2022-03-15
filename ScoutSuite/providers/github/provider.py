@@ -32,14 +32,15 @@ class GithubProvider(BaseProvider):
         self.last_run = None
         self.metadata = None
         self.credentials = kwargs['credentials']
+        self.repositories = kwargs['repositories']
         self.provider_code = 'github'
         self.provider_name = 'Github'
         self.environment = None
         self.account_id = None
-        self.services_config = GithubServicesConfig
+        self.services = GithubServicesConfig(self.credentials, self.repositories)
 
-        super(GithubProvider, self).__init__(report_dir, timestamp, services, skipped_services)
-
+        super().__init__(report_dir, timestamp, services, skipped_services)
+        
     def get_report_name(self):
         """
         Returns the name of the report using the provider's configuration

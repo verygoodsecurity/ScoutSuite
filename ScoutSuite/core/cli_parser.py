@@ -386,9 +386,14 @@ class ScoutSuiteArgumentParser:
                                     help="Run Scout against a GSuite account")
 
     def _init_github_parser(self):
-        self.subparsers.add_parser("github",
-                                    parents=[self.common_providers_args_parser],
-                                    help="Run Scout against a Github account")
+        github_parser = self.subparsers.add_parser("github",
+                                                   parents=[self.common_providers_args_parser],
+                                                   help="Run Scout against a Github account")
+
+        github_parser.add_argument('--repositories',
+                                   dest='repositories',
+                                   default=[],
+                                   help='Repository IDs')
     
     def parse_args(self, args=None):
         args = self.parser.parse_args(args)

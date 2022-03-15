@@ -3,7 +3,7 @@ from ScoutSuite.providers.base.authentication_strategy import AuthenticationStra
 
 class GithubAuthenticationStrategy(AuthenticationStrategy):
     """
-    Implements authentication for Gsuite
+    Implements authentication for GitHub
     """
 
     def authenticate(self, **kwargs):

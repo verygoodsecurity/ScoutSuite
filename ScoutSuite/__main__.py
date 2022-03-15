@@ -53,6 +53,8 @@ def run_from_cli():
                    organization_id=args.get('organization_id'), all_projects=args.get('all_projects'),
                    # Aliyun
                    access_key_id=args.get('access_key_id'), access_key_secret=args.get('access_key_secret'),
+                   # GitHub
+                   repositories=args.get('repositories'),
                    # General
                    report_name=args.get('report_name'), report_dir=args.get('report_dir'),
                    timestamp=args.get('timestamp'),
@@ -99,6 +101,8 @@ def run(provider,
         project_id=None, folder_id=None, organization_id=None, all_projects=False,
         # Aliyun
         access_key_id=None, access_key_secret=None,
+        # GitHub
+        repositories=[],
         # General
         report_name=None, report_dir=None,
         timestamp=False,
@@ -151,6 +155,8 @@ async def _run(provider,
                project_id, folder_id, organization_id, all_projects,
                # Aliyun
                access_key_id, access_key_secret,
+               # GitHub
+               repositories,
                # General
                report_name, report_dir,
                timestamp,
@@ -220,6 +226,8 @@ async def _run(provider,
                                       folder_id=folder_id,
                                       organization_id=organization_id,
                                       all_projects=all_projects,
+                                      # GitHub
+                                      repositories=repositories,
                                       # Other
                                       report_dir=report_dir,
                                       timestamp=timestamp,
