@@ -30,6 +30,7 @@ class ScoutSuiteArgumentParser:
         self._init_aliyun_parser()
         self._init_oci_parser()
         self._init_bamboohr_parser()
+        self._init_gsuite_parser()
 
     def _init_aws_parser(self):
         parser = self.subparsers.add_parser("aws",
@@ -377,6 +378,11 @@ class ScoutSuiteArgumentParser:
         self.subparsers.add_parser("bamboohr",
                                     parents=[self.common_providers_args_parser],
                                     help="Run Scout against a BambooHR account")
+
+    def _init_gsuite_parser(self):
+        self.subparsers.add_parser("gsuite",
+                                    parents=[self.common_providers_args_parser],
+                                    help="Run Scout against a GSuite account")
 
     def parse_args(self, args=None):
         args = self.parser.parse_args(args)

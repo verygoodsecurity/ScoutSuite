@@ -1,0 +1,18 @@
+{
+    "description": "Employees without 2FA",
+    "rationale": "",
+    "remediation": "",
+    "compliance": [
+        {
+            "name": "SOC2",
+            "version": "",
+            "reference": ""
+        }
+    ],
+    "dashboard_name": "Employees",
+    "path": "employees.directory.id",
+    "conditions": [ "and",
+      [ "isEnrolledIn2Sv", "false", "" ],
+      [ "suspended", "false", "" ]
+  ]
+} 

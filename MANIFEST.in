@@ -15,3 +15,5 @@ recursive-include ScoutSuite/providers/oci *
 recursive-include ScoutSuite/providers/oci/rules *
 recursive-include ScoutSuite/providers/bamboohr *
 recursive-include ScoutSuite/providers/bamboohr/rules *
+recursive-include ScoutSuite/providers/gsuite *
+recursive-include ScoutSuite/providers/gsuite/rules *

@@ -4,7 +4,8 @@ _strategies = {
     'azure': 'AzureAuthenticationStrategy',
     'aliyun': 'AliyunAuthenticationStrategy',
     'oci': 'OracleAuthenticationStrategy',
-    'bamboohr': 'BambooHRAuthenticationStrategy'
+    'bamboohr': 'BambooHRAuthenticationStrategy',
+    'gsuite': 'GsuiteAuthenticationStrategy'
 }
 
 
